@@ -18,8 +18,8 @@ import os
 import requests
 
 # get environment variables
-WT_BOT_TOKEN = os.environ['WT_BOT_TOKEN']
-
+#WT_BOT_TOKEN = os.environ['WT_BOT_TOKEN']
+WT_BOT_TOKEN = "OTY4ZjJjMDAtMDI2Yi00ZjM3LTg3OGUtMjMzMTNiNDhkNjE1MzkxMjJiZTAtNTI1_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f"
 # uncomment next line if you are implementing a notifier bot
 #WT_ROOM_ID = os.environ['WT_ROOM_ID']
 
@@ -47,12 +47,12 @@ def alert_received():
 
 
     # uncomment if you are implementing a controller bot
-    '''
+
     WT_ROOM_ID = raw_json['data']['roomId']
     personEmail_json = raw_json['data']['personEmail']
     if personEmail_json != WT_BOT_EMAIL:
         api.messages.create(roomId=WT_ROOM_ID, markdown=message)
-    '''
+
 
     return jsonify({'success': True})
 
