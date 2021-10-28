@@ -8,14 +8,14 @@ from tabulate import tabulate
 from flask import Flask
 from flask import request
 
-bearer="MDU4NzQzMGItNzkxYS00YTQyLTg3NmItNjE3NTkxMmE2NzQ5M2NiNDFmOTMtZmJk_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f"
+bearer=""#  WEBEX BOT ACCESS TOKEN
 
 headers = {
     "Accept": "application/json",
     "Content-Type": "application/json; charset=utf-8",
     "Authorization": "Bearer " + bearer
 }
-database="C:/Users/julimend/OneDrive - Cisco/Para julio/CISCO ALEYA/db.sqlite3"
+database=" "#PATH OF YOUR DATABASE
 architectures={"collaboration":1,"data center":2,"meraki":3,"enterprise networking":4,"security":5,"small Business":6,"accesories":7,"iot":8,"industry":9,"others":10}
 
 WEBHOOKS_LIST=["messages","memberships"]
